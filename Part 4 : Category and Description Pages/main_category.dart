@@ -18,6 +18,7 @@ class CategoryPageState extends State<CategoryPage> {
         home: new Scaffold(
       drawer: CusNavDrawer(),
       backgroundColor: Color.fromRGBO(244, 243, 243, 1),
+          /* the following floatingactionbutton is not needed*/
       floatingActionButton: new FloatingActionButton(
         backgroundColor: kCategoryPageColor,
         onPressed: () {
@@ -33,10 +34,11 @@ class CategoryPageState extends State<CategoryPage> {
         elevation: 0,
         leading: IconButton(
             icon: Icon(
-              Icons.menu,
+              Icons.arrow_back,
               color: Colors.black87,
             ),
             onPressed: () => CusNavDrawer()),
+        /* add back function here*/
       ),
       body: Container(
         child: Column(
